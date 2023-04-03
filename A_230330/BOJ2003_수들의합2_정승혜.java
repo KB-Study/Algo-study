@@ -3,12 +3,10 @@ package A_230330;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 /*투포인터*/
 // 아직 잘 모르겟
-public class BOJ2003_수들의합2 {
+public class BOJ2003_수들의합2_정승혜 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
