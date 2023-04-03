@@ -16,14 +16,14 @@ public class BOJ1874_스택수열_정승혜 {
         int num = 1;
         StringBuilder sb = new StringBuilder("");
         for (int i = 0; i < n; i++) {
-            while (num <= arr[i]) {
+            while (num <= arr[i]) { //배열에 담긴 수보다 작거나 같으면 push
                 stack.push(num++);
                 sb.append("+\n");
             }
-            if (arr[i] == stack.pop())
+            if (arr[i] == stack.pop()) // 같으면 pop
                 sb.append("-\n");
             else {
-                System.out.println("NO");
+                System.out.println("NO"); //pop한 값이 다르면 불가능한 경우임
                 return;
             }
         }

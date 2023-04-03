@@ -27,7 +27,7 @@ public class BOJ2630_색종이만들기_정승혜 {
         boolean flag = true;
         for (int i = startY; i < endY; i++) {
             for (int j = startX; j < endX; j++) {
-                if (startColor != matrix[i][j]) {
+                if (startColor != matrix[i][j]) { //구역내 색이 다르면 반복문 탈출
                     flag = false;
                     break;
                 }
@@ -35,9 +35,9 @@ public class BOJ2630_색종이만들기_정승혜 {
             }
         }
         if(flag){
-            if(startColor == 0) cnt0++;
+            if(startColor == 0) cnt0++; 
             else cnt1++;
-        }else{
+        }else{ // 구역내 색이 다른 경우 분할해서 탐색
             int gap = (endX - startX)/2;
             search(startY, endY-gap, startX, endX-gap);
             search(startY, endY-gap, startX+gap, endX);
