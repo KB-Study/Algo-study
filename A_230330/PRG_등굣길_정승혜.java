@@ -1,6 +1,8 @@
+package A_230330;
+
 import java.util.Arrays;
 
-public class PRG_등굣길 {
+public class PRG_등굣길_정승혜 {
     public static int solution(int m, int n, int[][] puddles) {
         int[][] mat = new int[n][m];
         for (int[] puddle : puddles) // 못지나가면 mat -1
