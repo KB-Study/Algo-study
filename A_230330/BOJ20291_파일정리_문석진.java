@@ -1,4 +1,4 @@
-package study_230330;
+package A_230330;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-public class BOJ20291_문석진 {
+public class BOJ20291_파일정리_문석진 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
