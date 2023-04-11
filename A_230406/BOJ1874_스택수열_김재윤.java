@@ -1,4 +1,4 @@
-package A230406;
+package A_230406;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class BOJ1874_스택수열 {
+public class BOJ1874_스택수열_김재윤 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());

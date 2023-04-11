@@ -1,11 +1,11 @@
-package BAEKJOON;
+package A_230412;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class BOJ17070_파이프옮기기1 {
+public class BOJ17070_파이프옮기기1_김재윤 {
 	static boolean[][] isvisit;
 	static int[][] pi;
 	static int N, cnt;

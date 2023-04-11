@@ -1,11 +1,11 @@
-package A230406;
+package A_230406;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ2630_색종이만들기 {
+public class BOJ2630_색종이만들기_김재윤 {
 
 	static int N, white, blue;
 	static int[][] arr;

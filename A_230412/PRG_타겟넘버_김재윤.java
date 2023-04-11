@@ -1,12 +1,10 @@
-package PROG;
+package A_230412;
 
-public class 타겟넘버 {
-
-	class Solution {
+class PRG_타겟넘버_김재윤 {
 		static int tgt, cnt;
 		static int[] num;
 
-		static void dfs(int sum, int idx) {
+		public static void dfs(int sum, int idx) {
 			if (idx == num.length) {
 				if (sum == tgt)
 					cnt++;
@@ -18,13 +16,11 @@ public class 타겟넘버 {
 
 		}
 
-		public int solution(int[] numbers, int target) {
+		public  static int solution(int[] numbers, int target) {
 			int answer = 0;
 			tgt = target;
 			num = numbers;
 			dfs(0, 0);
 			return answer = cnt;
 		}
-	}
-
 }
