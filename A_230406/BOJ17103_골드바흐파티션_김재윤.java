@@ -1,4 +1,4 @@
-package A230406;
+package A_230406;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class BOJ17103_골드바흐파티션 {
+public class BOJ17103_골드바흐파티션_김재윤 {
 
 	static boolean[] primeNum;
 	static int max;

@@ -1,8 +1,8 @@
-package PROG;
+package A_230412;
 
 import java.util.Arrays;
 
-public class 구명보트 {
+public class PRG_구명보트_김재윤 {
 
 	class Solution {
 	    public int solution(int[] people, int limit) {

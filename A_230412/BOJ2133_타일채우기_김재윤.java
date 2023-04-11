@@ -1,11 +1,11 @@
-package BAEKJOON;
+package A_230412;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class BOJ2133_타일채우기 {
+public class BOJ2133_타일채우기_김재윤 {
 
 	public static void main(String[] args) throws IOException {
 
