@@ -13,7 +13,8 @@ public class PRG_구명보트_정승혜 {
         int left = 0, right = people.length - 1;
         while(left<=right){
             count++;
-            if(people[left]+people[right] <= limit) left++;
+            if(people[left]+people[right] <= limit) left++; //최소무게+최대무게가 제한 이하 -> 나갈 수 있음
+            //else의 경우 최대무게한명만 나감
             right --;
         }
         return count;

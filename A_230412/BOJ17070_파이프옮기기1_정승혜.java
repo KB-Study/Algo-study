@@ -30,26 +30,27 @@ public class BOJ17070_파이프옮기기1_정승혜 {
     }
 
     static void dfs(int r, int c, int dir) {
-        if (r == n - 1 && c == n - 1) {
+        if (r == n - 1 && c == n - 1) { //최종지점 도달 탈출
             count++;
             return;
         }
         switch (dir) {
-            case 0:
+            case 0: //오른쪽 방향
                 if (c + 1 < n && matrix[r][c + 1] == 0)
                     dfs(r, c + 1, 0);
                 break;
-            case 1:
+            case 1: // 아래 방향
                 if (r + 1 < n && matrix[r + 1][c] == 0)
                     dfs(r + 1, c, 1);
                 break;
-            case 2:
+            case 2: // 대각선 방향
                 if (c + 1 < n && matrix[r][c + 1] == 0)
                     dfs(r, c + 1, 0);
                 if (r + 1 < n && matrix[r + 1][c] == 0)
                     dfs(r + 1, c, 1);
                 break;
         }
+        // 모든 경우에 대각선 이동 가능
         if (c + 1 < n && r + 1 < n && matrix[r][c + 1] == 0 && matrix[r + 1][c] == 0 && matrix[r + 1][c + 1] == 0)
             dfs(r + 1, c + 1, 2);
     }

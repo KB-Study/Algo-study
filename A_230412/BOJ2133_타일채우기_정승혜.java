@@ -15,7 +15,7 @@ public class BOJ2133_타일채우기_정승혜 {
         n /= 2;
         int[] arr = new int[n + 1];
         arr[0] = 1;
-        arr[1] = 3;
+        arr[1] = 3; //n=2 -> 3가지
         for (int i = 2; i <= n; i++) {
             arr[i] = arr[i - 1] * arr[1];
             for (int j = i - 2; j >= 0; j--)
