@@ -1,10 +1,10 @@
-package codingtest;
+package A_230406;
 
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class BOJ1874_스택수열 {
+public class BOJ1874_스택수열_이원근 {
 
 	//필드 선언
 	static int n;	//입력 받을 수의 개수

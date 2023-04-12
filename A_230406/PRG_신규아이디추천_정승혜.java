@@ -1,7 +1,5 @@
 package A_230406;
 
-
-
 public class PRG_신규아이디추천_정승혜 {
     public static String solution(String new_id) {
         StringBuilder sb = new StringBuilder("");

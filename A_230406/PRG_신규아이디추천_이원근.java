@@ -7,9 +7,9 @@
 // 6. 16자 이상이면 앞에서 15글자까지만 자름
 // 7. .이 끝에 위치하면 . 제거
 // 8. id가 2자 이하라면 마지막 문자를 길이가 3이 될 때 까지 반복
+package A_230406;
 
-
-class Solution {
+class PRG_신규아이디추천_이원근 {
     public String solution(String new_id) {
         
 	String answer = new_id;

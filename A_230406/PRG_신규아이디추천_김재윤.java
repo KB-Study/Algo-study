@@ -1,6 +1,6 @@
-package A230406;
+package A_230406;
 
-public class PROG_신규아이디추천 {
+public class PRG_신규아이디추천_김재윤 {
 
 	class Solution {
 		public String solution(String new_id) {
