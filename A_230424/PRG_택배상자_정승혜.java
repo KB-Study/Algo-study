@@ -1,15 +1,11 @@
 package A_230424;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 public class PRG_택배상자_정승혜 {
     public static int solution(int[] order) {
         int[] main = new int[order.length + 1];
         Stack<Integer> sub = new Stack<>();
-    //    Queue<Integer> sub = new LinkedList<>();
         int answer = 0;
         int idx = 1;
         for (int o : order)
