@@ -1,5 +1,6 @@
 package A_230424;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class PRG_택배상자_정승혜 {
@@ -10,6 +11,7 @@ public class PRG_택배상자_정승혜 {
         int idx = 1;
         for (int o : order)
             main[o] = idx++;
+        System.out.println(Arrays.toString(main));
         idx = 1;
         for (int i = 1; i < order.length + 1; i++) {
             if (main[i] == idx) {
