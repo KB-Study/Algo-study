@@ -9,7 +9,8 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
-		
+
+		//map을 통하여 부모와 자식 관계 표현
 		map = new HashMap<>();
 		for(int i = 0; i < N-1; i++){
 			String[] sArr = br.readLine().split(" ");
@@ -21,10 +22,12 @@ public class Main {
 		String[] sArr = br.readLine().split(" ");
 		String child = sArr[0];
 		String parent = sArr[1];
-		
+
+		//upcasting과 downcasting 모두 형변환이 가능한 것이므로 둘 중에 하나만이라도 true라면 형변환이 가능한 것이다
 		int answer = (dfs(child,parent) || dfs(parent,child))  ? 1 : 0;
 		System.out.println(answer);
 	} 
+	
 	static private boolean dfs(String start, String end){
 		if(start.equals(end)){
 			return true;
