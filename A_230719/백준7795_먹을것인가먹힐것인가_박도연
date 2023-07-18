@@ -1,0 +1,50 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+public class Main {
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		int tc = Integer.parseInt(br.readLine());
+		for(int t = 0; t < tc; t++){
+			String[] sArr = br.readLine().split(" ");
+			int n = Integer.parseInt(sArr[0]);
+			int m = Integer.parseInt(sArr[1]);
+			
+			int[] arr1 = new int[n];
+			int[] arr2 = new int[m];
+			
+			sArr = br.readLine().split(" ");
+			for(int i = 0; i < n; i++)
+				arr1[i] = Integer.parseInt(sArr[i]);
+			
+			sArr = br.readLine().split(" ");
+			for(int i = 0; i < m; i++)
+				arr2[i] = Integer.parseInt(sArr[i]);
+			
+			Arrays.sort(arr1);
+			Arrays.sort(arr2);
+			
+			int cnt = 0;
+			for(int i = 0; i < arr1.length; i++){
+				boolean flag = false;
+				int num1 = arr1[i];
+				for(int j = 0; j < arr2.length; j++){
+					int num2 = arr2[j];
+					if(num1 <= num2){
+						flag = true;
+						cnt+=j;
+						break;
+					}
+				}
+				if(!flag)
+					cnt += m;
+			}
+			
+			sb.append(cnt+"\n");
+		}
+		
+		System.out.println(sb);
+	}
+}
