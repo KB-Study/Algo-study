@@ -3,7 +3,7 @@ package A_230719;
 import java.io.*;
 import java.util.*;
 
-public class BOJ7795_먹을것인가먹힐것인가 {
+public class BOJ7795_먹을것인가먹힐것인가_임서영 {
     class Main {
 
         static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
