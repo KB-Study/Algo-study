@@ -1,0 +1,31 @@
+import java.util.*;
+
+class Solution {
+	static List<String> list = new LinkedList<>();
+	static String[] arr = new String[5];
+	static{
+		arr[0] = "A";
+		arr[1] = "E";
+		arr[2] = "I";
+		arr[3] = "O";
+		arr[4] = "U";
+	}
+	
+	public int solution(String word) {
+        int answer = 0;
+        dfs("");
+        answer = list.indexOf(word)+1;
+        return answer;
+    }
+	public void dfs(String s){
+		if(s.length()>=1)
+			list.add(s);
+		if(s.length()==5){
+			return;
+		}
+		
+		for(int i = 0; i < 5; i++){
+			dfs(s+arr[i]);
+		}
+	}
+}
